@@ -1,0 +1,98 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Configuración de fuente y margen */
+  .card-container {
+    font-family: 'Inter', sans-serif;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+  }
+  /* Estilo para la "pizarra" */
+  .styled-card {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border: 2px solid #3b82f6; /* Borde azul para destacar */
+  }
+  /* Estilo del título Example: */
+  .example-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #1f2937;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  /* Estilo de los iconos SVG */
+  .icon-check { color: #10b981; } /* Verde para positivo */
+  .icon-cross { color: #ef4444; } /* Rojo para negativo */
+  .icon-question { color: #f59e0b; } /* Amarillo/Naranja para interrogativo */
+
+  /* Estilos de texto */
+  .english-text {
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.1rem;
+  }
+  .spanish-text {
+    color: #6b7280; /* Texto gris */
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: -0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Contenedor para la línea de ejemplo con transición y hover */
+  .example-line {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .example-line:hover {
+    background-color: #e0f2ff; /* Color azul muy suave al hacer hover */
+  }
+</style>
+
+<div class="card-container">
+  <div class="styled-card">
+    <!-- Título principal -->
+    <p class="example-title">Example:</p>
+
+    <!-- Ejemplo 1: Afirmativo (Check) -->
+    <div class="example-line flex items-start mb-4">
+      <!-- Icono Check -->
+      <svg class="icon-check w-8 h-8 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+      <div>
+        <p class="english-text">When I was a child, my grandfather used to take me to the park.</p>
+        <p class="spanish-text">Cuando era pequeño, mi abuelo me solía llevar al parque.</p>
+      </div>
+    </div>
+
+    <!-- Ejemplo 2: Negativo (Cross) -->
+    <div class="example-line flex items-start mb-4">
+      <!-- Icono Cross -->
+      <svg class="icon-cross w-8 h-8 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+      <div>
+        <p class="english-text">When she was young, she didn't use to be that good.</p>
+        <p class="spanish-text">Cuando ella era joven, no solía ser tan buena.</p>
+      </div>
+    </div>
+
+    <!-- Ejemplo 3: Interrogativo (Question - Reemplazado por IMG con el tamaño w-8 h-8) -->
+    <div class="example-line flex items-start">
+      <!-- Icono Question Mark (Signo de Interrogación) -->
+      <img 
+        src="https://pngimg.com/d/question_mark_PNG87.png" 
+        alt="Signo de interrogación" 
+        class="w-8 h-8 mr-4 mt-1 flex-shrink-0"
+        onerror="this.src='https://placehold.co/32x32/f59e0b/ffffff?text=?'"
+      />
+      <div>
+        <p class="english-text">Did you use to like coffee?</p>
+        <p class="spanish-text">¿Te solía gustar el café?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
