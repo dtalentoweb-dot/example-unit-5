@@ -1,10 +1,15 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
   /* Configuración de fuente y margen */
-  .card-container {
+  body { /* Fondo del body ahora es blanco puro */
     font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff; 
+  }
+  .card-container { /* Fondo del contenedor principal ahora es blanco puro */
     padding: 1.5rem;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
   }
   /* Estilo para la "pizarra" */
   .styled-card {
@@ -56,33 +61,26 @@
 
 <div class="card-container">
   <div class="styled-card">
-    <!-- Título principal -->
-    <p class="example-title">Example:</p>
+    <!-- Título principal --><p class="example-title">Example:</p>
 
-    <!-- Ejemplo 1: Afirmativo (Check) -->
-    <div class="example-line flex items-start mb-4">
-      <!-- Icono Check -->
-      <svg class="icon-check w-8 h-8 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+    <!-- Ejemplo 1: Afirmativo (Check) --><div class="example-line flex items-start mb-4">
+      <!-- Icono Check --><svg class="icon-check w-8 h-8 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
       <div>
         <p class="english-text">When I was a child, my grandfather used to take me to the park.</p>
         <p class="spanish-text">Cuando era pequeño, mi abuelo me solía llevar al parque.</p>
       </div>
     </div>
 
-    <!-- Ejemplo 2: Negativo (Cross) -->
-    <div class="example-line flex items-start mb-4">
-      <!-- Icono Cross -->
-      <svg class="icon-cross w-8 h-8 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+    <!-- Ejemplo 2: Negativo (Cross) --><div class="example-line flex items-start mb-4">
+      <!-- Icono Cross --><svg class="icon-cross w-8 h-8 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
       <div>
         <p class="english-text">When she was young, she didn't use to be that good.</p>
         <p class="spanish-text">Cuando ella era joven, no solía ser tan buena.</p>
       </div>
     </div>
 
-    <!-- Ejemplo 3: Interrogativo (Question - Reemplazado por IMG con el tamaño w-8 h-8) -->
-    <div class="example-line flex items-start">
-      <!-- Icono Question Mark (Signo de Interrogación) -->
-      <img 
+    <!-- Ejemplo 3: Interrogativo (Question - Reemplazado por IMG con el tamaño w-8 h-8) --><div class="example-line flex items-start">
+      <!-- Icono Question Mark (Signo de Interrogación) --><img 
         src="https://pngimg.com/d/question_mark_PNG87.png" 
         alt="Signo de interrogación" 
         class="w-8 h-8 mr-4 mt-1 flex-shrink-0"
